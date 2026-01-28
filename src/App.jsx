@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Terminal, Cpu, Shield, Code, Database, Globe, Share2, Award, BookOpen, MessageSquare, CornerDownLeft, X, Loader, ChevronUp, ChevronDown, Minus, Maximize2, ExternalLink, Mail, Linkedin, Github } from 'lucide-react';
+import { Terminal, Cpu, Shield, Code, Database, Globe, Share2, Award, BookOpen, MessageSquare, CornerDownLeft, X, Loader, ChevronUp, ChevronDown, Minus, Maximize2, ExternalLink, Mail, Linkedin, Github, Send } from 'lucide-react';
 
 // --- Comprehensive CV Data (Knowledge Base) ---
 const cvData = {
     name: "Rupak Neupane",
-    role: "AI Engineer | Computer Engineering Student",
+    role: "AI Developer | Computer Engineering Student",
     location: "Bhaktapur, Nepal",
     contact: {
         email: "neupanerupak7@gmail.com",
@@ -29,7 +29,7 @@ const cvData = {
     ],
     experience: [
         {
-            role: "Artificial Intelligence Engineer",
+            role: "Artificial Intelligence Developer",
             company: "Global IME Bank",
             year: "Aug 2025 - Current",
             details: "Developing internal AI tools for improving efficiency of various banking workflows.",
@@ -253,7 +253,6 @@ const Portfolio = () => {
                         ))}
                     </AsciiSection>
 
-                    {/* MOVED: Academic History is now above Published Research */}
                     <AsciiSection title="ACADEMIC_HISTORY" icon={BookOpen}>
                         {cvData.education.map((e, i) => (
                             <div key={i} className="mb-4">
@@ -277,7 +276,6 @@ const Portfolio = () => {
                         ))}
                     </AsciiSection>
 
-                    {/* MOVED: Certifications brought to the left column */}
                     <AsciiSection title="VERIFIED_CERTIFICATIONS" icon={Award}>
                         <div className="grid grid-cols-1 gap-3">
                             {cvData.certifications.map((cert, i) => (
@@ -326,6 +324,51 @@ const Portfolio = () => {
                         </div>
                     </AsciiSection>
 
+                    {/* NEW: Formspree Contact Form Section */}
+                    <AsciiSection title="ENCRYPTED_MESSAGE_LINK" icon={MessageSquare}>
+                        <form action="https://formspree.io/f/xyzkqypw" method="POST" className="space-y-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="space-y-1">
+                                    <label className="text-[10px] text-green-800 font-bold tracking-widest block uppercase">IDENTIFIER:</label>
+                                    <input 
+                                        type="text" 
+                                        name="name" 
+                                        required 
+                                        className="w-full bg-black border border-green-900 p-2 text-xs text-green-400 outline-none focus:border-green-500 placeholder:text-green-900" 
+                                        placeholder="your_name"
+                                    />
+                                </div>
+                                <div className="space-y-1">
+                                    <label className="text-[10px] text-green-800 font-bold tracking-widest block uppercase">RETURN_PATH:</label>
+                                    <input 
+                                        type="email" 
+                                        name="email" 
+                                        required 
+                                        className="w-full bg-black border border-green-900 p-2 text-xs text-green-400 outline-none focus:border-green-500 placeholder:text-green-900" 
+                                        placeholder="email@address.com"
+                                    />
+                                </div>
+                            </div>
+                            <div className="space-y-1">
+                                <label className="text-[10px] text-green-800 font-bold tracking-widest block uppercase">PAYLOAD:</label>
+                                <textarea 
+                                    name="message" 
+                                    required 
+                                    rows="3"
+                                    className="w-full bg-black border border-green-900 p-2 text-xs text-green-400 outline-none focus:border-green-500 placeholder:text-green-900 resize-none" 
+                                    placeholder="Enter encrypted message here..."
+                                ></textarea>
+                            </div>
+                            <button 
+                                type="submit" 
+                                className="w-full border border-green-600 bg-green-950/30 text-green-400 py-2 text-xs font-bold hover:bg-green-600 hover:text-black transition-all flex items-center justify-center gap-2 group"
+                            >
+                                <Send size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                TRANSMIT_PACKET
+                            </button>
+                        </form>
+                    </AsciiSection>
+
                     <AsciiSection title="SOCIAL_NODE_LINKS" icon={Share2}>
                         <div className="text-[11px] space-y-3">
                             <a href={cvData.contact.github} target="_blank" rel="noopener noreferrer" className="flex justify-between border-b border-green-900/30 pb-1 hover:text-white group">
@@ -358,6 +401,7 @@ const Portfolio = () => {
             <style>{`
                 ::-webkit-scrollbar { display: none; }
                 input::placeholder { color: #052e16; }
+                textarea::placeholder { color: #052e16; }
                 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
                 a { cursor: pointer; text-decoration: none; color: inherit; }
             `}</style>
