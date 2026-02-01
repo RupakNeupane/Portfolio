@@ -76,12 +76,14 @@ const cvData = {
         "Top 50 Qualifiers, Kathmandu Metro Idea 2080"
     ],
     certifications: [
-        { name: "OCI 2024 GenAI Certified Professional", link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E48EB518C6A64B9ED267C49D37AC2C639ED" },
+        { name: "Microdegree™ in Artificial Intelligence", link: "https://s3.amazonaws.com/fuseclassroom-resources-prod/student-certificates/Microdegree%E2%84%A2+in+Artificial+Intelligence+2025-RUPAK+NEUPANE.pdf"},
+        { name: "Future AWS AI Scientist", link: "https://www.udacity.com/certificate/e/7c29dbda-8144-11f0-a6f7-ffeee4e77d70" },
+        { name: "OCI 2024 GenAI Certified Professional", link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E48EB518C6A64B9ED267C49D37AC2C639ED483F7FD7A9B50F8C1A6CBFB56D74C" },
         { name: "AI Fundamentals (DataCamp)", link: "https://www.datacamp.com/skill-verification/AIF0024951611331" },
         { name: "Data Literacy (DataCamp)", link: "https://www.datacamp.com/skill-verification/DL0038780238200" },
         { name: "AI For Everyone (Coursera)", link: "https://www.coursera.org/account/accomplishments/certificate/E7E2FW6QBVEE" },
-        { name: "Introducing GenAI with AWS (Udacity)", link: "https://www.udacity.com" },
-        { name: "AI Job Simulation (Cognizant/Forage)", link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Cognizant/5N2ygyhzMWjKQmgCK_Cogniza%20nt_8K7Q2H6NefkWyhd9j_1721645889041_completion_certificate.pdf" }
+        { name: "Introducing GenAI with AWS (Udacity)", link: "https://www.udacity.com/certificate/e/cfc834ec-3c90-11f0-be37-5bd5fc315a19" },
+        { name: "AI Job Simulation (Cognizant/Forage)", link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Cognizant/5N2ygyhzMWjKQmgCK_Cognizant_8K7Q2H6NefkWyhd9j_1721645889041_completion_certificate.pdf" }
     ]
 };
 
