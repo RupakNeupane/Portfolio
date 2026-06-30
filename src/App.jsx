@@ -31,12 +31,21 @@ const cvData = {
         {
             role: "Artificial Intelligence Developer",
             company: "Global IME Bank",
-            year: "Aug 2025 - Current",
+            year: "7 October 2025 - 5 January 2026",
             details: "Developing internal AI tools for improving efficiency of various banking workflows.",
             link: "https://www.globalimebank.com"
         }
     ],
     publications: [
+        {
+          "title": "A Solution to The Face DeepFake Detection Challenge",
+          "authors": "Rupak Neupane, Srijan Gyawali, Sarjyant Shrestha, and Manish Pyakurel",
+          "journal": "Proceedings of the 16th IOE Graduate Conference",
+          "volume": "Vol. 16",
+          "pages": "pp. 2023–2028",
+          "year": "2025",
+          "link": "https://conference.ioe.edu.np/publications/ioegc16/IOEGC-16-281-PS2-19.pdf"
+        },
         {
             title: "Automating Document Workflows with ResNet-50 and Template-Based OCR",
             authors: "Srijan Gyawali, Rupak Neupane, Sarjyant Shrestha, and Manish Pyakurel",
@@ -53,11 +62,11 @@ const cvData = {
             tech: "BERT, NLP, PyTorch",
             link: "https://github.com/srijangyawali04/Sabdhamanthan"
         },
-        {
-            name: "DeepFake Detection",
-            desc: "Residual networks model to distinguish fake faces from real ones.",
-            tech: "ResNet, CV, Deep Learning",
-            link: "https://github.com/SarjyantShrestha/Deepfake-Image-Detection"
+       {
+          "name": "Facial Keypoint Detection",
+          "desc": "Developed a deep learning–based facial landmark detection system using a modified VGG-16 architecture to accurately predict 68 facial keypoints for computer vision applications.",
+          "tech": "VGG-16, CV, Deep Learning, Facial Landmarks",
+          "link": "https://github.com/RupakNeupane/Facial_Key_Point_Detection"
         },
         {
             name: "Bird Classification",
