@@ -281,7 +281,7 @@ const Portfolio = () => {
                                 <div className="text-green-800 text-[9px] mt-1 font-bold italic">{p.authors}</div>
                                 <div className="text-green-700 text-[10px] font-bold mt-1">{p.journal} // {p.volume} // {p.year}</div>
                                 <a href={p.link} target="_blank" rel="noopener noreferrer" className="mt-2 text-[10px] border border-green-900 px-3 py-1 hover:bg-green-900 hover:text-white transition-all flex items-center w-fit gap-2">
-                                    <Globe size={12} /> RETRIEVE_FROM_NEPJOL
+                                    <Globe size={12} /> RETRIEVE_FROM_SOURCE
                                 </a>
                             </div>
                         ))}
