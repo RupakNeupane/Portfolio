@@ -1,5 +1,5 @@
 .portfolio-shell {
-  --page-width: 1180px;
+  --page-width: 1600px;
   --bg: #f3f1ec;
   --bg-soft: #eceae4;
   --panel: rgba(255, 255, 255, 0.7);
@@ -78,7 +78,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   min-height: 82px;
+  padding-inline: max(24px, calc((100% - var(--page-width)) / 2));
   background: rgba(243, 241, 236, 0.72);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
@@ -897,7 +899,9 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  width: 100%;
   min-height: 78px;
+  padding-inline: max(24px, calc((100% - var(--page-width)) / 2));
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.74rem;
@@ -946,6 +950,11 @@ a {
 
   .site-header {
     position: sticky;
+    padding-inline: 14px;
+  }
+
+  .site-footer {
+    padding-inline: 14px;
   }
 
   .main-nav {
@@ -1045,6 +1054,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 1rem 0 2rem;
+    padding: 1rem 14px 2rem;
   }
 }

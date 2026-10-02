@@ -222,7 +222,7 @@ function PortfolioPage() {
 
   return (
     <div className="portfolio-shell" data-theme={theme}>
-      <header className="site-header content-width">
+      <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Rupak Neupane home" onClick={closeMenu}>
           <span className="wordmark-mark">RN</span>
           <span>Rupak Neupane</span>
@@ -264,7 +264,7 @@ function PortfolioPage() {
         <section className="hero content-width">
           <div className="hero-copy">
             <p className="eyebrow hero-eyebrow">
-              <span className="status-dot" /> AI engineer · researcher · builder
+              <span className="status-dot" /> AI engineer · researcher
             </p>
             <h1>
               Rupak
@@ -560,15 +560,12 @@ function PortfolioPage() {
               <a href="https://linkedin.com/in/rupakneupane007" target="_blank" rel="noreferrer">
                 <Linkedin size={16} /> LinkedIn <ArrowUpRight size={13} />
               </a>
-              <a href="https://rupakneupane.com.np" target="_blank" rel="noreferrer">
-                <BookOpen size={16} /> Website <ArrowUpRight size={13} />
-              </a>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="site-footer content-width">
+      <footer className="site-footer">
         <a className="wordmark" href="#top">
           <span className="wordmark-mark">RN</span>
           <span>Rupak Neupane</span>
