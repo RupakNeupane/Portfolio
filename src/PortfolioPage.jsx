@@ -41,9 +41,9 @@ const certificates = [
   { title: 'Artificial Intelligence Fundamentals', issuer: 'IBM SkillsBuild', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/IBMDesign20261002-20-zj0at6.webp', import.meta.url).href },
   { title: 'Introduction to Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intro to Machine Learning.webp', import.meta.url).href },
   { title: 'Intermediate Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intermediate Machine Learning.webp', import.meta.url).href },
+  { title: 'Annual Nepal AI School', issuer: 'NAAMII', year: '2025', category: 'Research', file: new URL('../certificates/optimized/ANAIS.webp', import.meta.url).href, orientation: 'portrait' },
   { title: 'Introduction to Deep Learning', issuer: 'Kaggle', year: '2023', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intro to Deep Learning.webp', import.meta.url).href },
   { title: 'Computer Vision', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Computer Vision.webp', import.meta.url).href },
-  { title: 'Annual Nepal AI School', issuer: 'NAAMII', year: '2025', category: 'Research', file: new URL('../certificates/optimized/ANAIS.webp', import.meta.url).href, orientation: 'portrait' },
 ];
 
 const publications = [
