@@ -25,21 +25,22 @@ const resumeUrl = new URL('../Resume.pdf', import.meta.url).href;
 const profileImage = new URL('../RupakPhoto.JPG', import.meta.url).href;
 
 const certificates = [
+  { title: 'International Conference on Recent Trends in Artificial Intelligence', issuer: 'ICRTAI', year: '2025', category: 'Research', file: new URL('../certificates/ICRTAI.png', import.meta.url).href },
   { title: '1st Runner-up, AI/ML Hackathon', issuer: 'Global IME Bank', year: '2025', category: 'Awards', file: new URL('../certificates/certificate.png', import.meta.url).href },
-  { title: 'Quantum Computing', issuer: 'IIT-Roorkee', year: '2024', category: 'Quantum', file: new URL('../certificates/neupanerupak7@gmail.com_certificate.png', import.meta.url).href },
+  { title: 'Microdegree in Artificial Intelligence', issuer: 'Fusemachines', year: '2025', category: 'AI & ML', file: new URL('../certificates/Microdegree™+in+Artificial+Intelligence+2025-RUPAK+NEUPANE.png', import.meta.url).href },
+  { title: 'Quantum Computing', issuer: 'IIT-Roorkee', year: '2025', category: 'Quantum', file: new URL('../certificates/neupanerupak7@gmail.com_certificate.png', import.meta.url).href },
   { title: 'Future AWS AI Scientist', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/Future AWS AI Scientist.png', import.meta.url).href },
-  { title: 'AI for Everyone', issuer: 'DeepLearning.AI · Coursera', year: '2022', category: 'AI & ML', file: new URL('../certificates/Coursera E7E2FW6QBVEE.png', import.meta.url).href },
   { title: 'Kathmandu Metro Idea & Innovation 2080', issuer: 'Kathmandu Metropolitan City', year: '2023', category: 'Awards', file: new URL('../certificates/KMII.png', import.meta.url).href },
-  { title: 'AI Fundamentals', issuer: 'DataCamp', year: '2025', category: 'AI & ML', file: new URL('../certificates/AIF0024951611331.png', import.meta.url).href },
+  { title: 'AI for Everyone', issuer: 'DeepLearning.AI · Coursera', year: '2022', category: 'AI & ML', file: new URL('../certificates/Coursera E7E2FW6QBVEE.png', import.meta.url).href },
+  { title: 'AI Fundamentals', issuer: 'DataCamp', year: '2024', category: 'AI & ML', file: new URL('../certificates/AIF0024951611331.png', import.meta.url).href },
+  { title: 'Data Literacy', issuer: 'DataCamp', year: '2024', category: 'Data', file: new URL('../certificates/DL0038780238200.png', import.meta.url).href },
   { title: 'Artificial Intelligence Job Simulation', issuer: 'Cognizant · Forage', year: '2024', category: 'AI & ML', file: new URL('../certificates/AI+Job+Simulation.png', import.meta.url).href },
   { title: 'AWS AI Practitioner Challenge', issuer: 'Udacity', year: '2026', category: 'Cloud', file: new URL('../certificates/AWS+AI+Practitioner+Challenge.png', import.meta.url).href },
-  { title: 'Artificial Intelligence Fundamentals', issuer: 'IBM SkillsBuild', year: '2024', category: 'AI & ML', file: new URL('../certificates/IBMDesign20261002-20-zj0at6.png', import.meta.url).href },
-  { title: 'International Conference on Recent Trends in Artificial Intelligence', issuer: 'ICRTAI', year: '2024', category: 'Research', file: new URL('../certificates/ICRTAI.png', import.meta.url).href },
   { title: 'Introducing Generative AI with AWS', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/Intro-GenerativeAIwithAWS.png', import.meta.url).href },
-  { title: 'Microdegree in Artificial Intelligence', issuer: 'Fusemachines', year: '2025', category: 'AI & ML', file: new URL('../certificates/Microdegree™+in+Artificial+Intelligence+2025-RUPAK+NEUPANE.png', import.meta.url).href },
+  { title: 'Artificial Intelligence Fundamentals', issuer: 'IBM SkillsBuild', year: '2024', category: 'AI & ML', file: new URL('../certificates/IBMDesign20261002-20-zj0at6.png', import.meta.url).href },
   { title: 'Introduction to Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Intro to Machine Learning.png', import.meta.url).href },
-  { title: 'Introduction to Deep Learning', issuer: 'Kaggle', year: '2023', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Intro to Deep Learning.png', import.meta.url).href },
   { title: 'Intermediate Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Intermediate Machine Learning.png', import.meta.url).href },
+  { title: 'Introduction to Deep Learning', issuer: 'Kaggle', year: '2023', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Intro to Deep Learning.png', import.meta.url).href },
   { title: 'Computer Vision', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Computer Vision.png', import.meta.url).href },
   { title: 'Annual Nepal AI School', issuer: 'NAAMII', year: '2025', category: 'Research', file: new URL('../certificates/ANAIS.png', import.meta.url).href, orientation: 'portrait' },
 ];
@@ -85,19 +86,19 @@ const projects = [
   },
 ];
 
-const categories = ['All', 'AI & ML', 'Cloud', 'Research', 'Awards'];
+const categories = ['All', 'AI & ML', 'Data', 'Cloud', 'Research', 'Awards'];
 
 const lifeMoments = [
   {
-    title: 'Quiet morning in the hills',
+    title: 'Quiet evening in Pokhara',
     src: new URL('../Photos/IMG_20221028_163325.jpg', import.meta.url).href,
   },
   {
-    title: 'Sunrise reflection',
+    title: 'Sunrise reflection through the mountains',
     src: new URL('../Photos/IMG_20221030_070230.jpg', import.meta.url).href,
   },
   {
-    title: 'Evening walk',
+    title: 'Peeking through the cave',
     src: new URL('../Photos/IMG_20221124_160032.jpg', import.meta.url).href,
   },
   {
@@ -109,19 +110,19 @@ const lifeMoments = [
     src: new URL('../Photos/IMG_20231031_115652.jpg', import.meta.url).href,
   },
   {
-    title: 'City light',
+    title: 'Morning in the mountains',
     src: new URL('../Photos/IMG_20231104_084133.jpg', import.meta.url).href,
   },
   {
-    title: 'Street rhythm',
+    title: 'Finally On the top (Larke Pass)',
     src: new URL('../Photos/IMG_20231104_084141.jpg', import.meta.url).href,
   },
   {
-    title: 'Field moments',
+    title: 'Peace and quiet',
     src: new URL('../Photos/PXL_20241017_112822522.jpg', import.meta.url).href,
   },
   {
-    title: 'A different angle',
+    title: 'Himlung Basecamp',
     src: new URL('../Photos/PXL_20241023_130822898.jpg', import.meta.url).href,
   },
   {
@@ -129,15 +130,15 @@ const lifeMoments = [
     src: new URL('../Photos/PXL_20241024_053113502.MP.jpg', import.meta.url).href,
   },
   {
-    title: 'On the road',
+    title: 'Temple meets mountains',
     src: new URL('../Photos/PXL_20241025_131837615.jpg', import.meta.url).href,
   },
   {
-    title: 'Open sky',
+    title: 'Lake on the top',
     src: new URL('../Photos/PXL_20241026_091728208.jpg', import.meta.url).href,
   },
   {
-    title: 'An ordinary day',
+    title: 'Steep downhill after the pass',
     src: new URL('../Photos/PXL_20241026_101621110.jpg', import.meta.url).href,
   },
   {
@@ -145,7 +146,7 @@ const lifeMoments = [
     src: new URL('../Photos/PXL_20241026_101637834.jpg', import.meta.url).href,
   },
   {
-    title: 'Fresh start',
+    title: 'Under the clouds',
     src: new URL('../Photos/PXL_20250116_152329098.jpg', import.meta.url).href,
   },
   {
