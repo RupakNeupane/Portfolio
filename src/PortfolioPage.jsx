@@ -22,27 +22,28 @@ import {
 import './PortfolioPage.css';
 
 const resumeUrl = new URL('../Resume.pdf', import.meta.url).href;
-const profileImage = new URL('../RupakPhoto.JPG', import.meta.url).href;
+const getOptimizedPhoto = (name) => new URL(`../Photos/optimized/${name}.webp`, import.meta.url).href;
+const profileImage = getOptimizedPhoto('RupakPhoto');
 
 const certificates = [
-  { title: 'International Conference on Recent Trends in Artificial Intelligence', issuer: 'ICRTAI', year: '2025', category: 'Research', file: new URL('../certificates/ICRTAI.png', import.meta.url).href },
-  { title: '1st Runner-up, AI/ML Hackathon', issuer: 'Global IME Bank', year: '2025', category: 'Awards', file: new URL('../certificates/certificate.png', import.meta.url).href },
-  { title: 'Microdegree in Artificial Intelligence', issuer: 'Fusemachines', year: '2025', category: 'AI & ML', file: new URL('../certificates/Microdegree™+in+Artificial+Intelligence+2025-RUPAK+NEUPANE.png', import.meta.url).href },
-  { title: 'Quantum Computing', issuer: 'IIT-Roorkee', year: '2025', category: 'Quantum', file: new URL('../certificates/neupanerupak7@gmail.com_certificate.png', import.meta.url).href },
-  { title: 'Future AWS AI Scientist', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/Future AWS AI Scientist.png', import.meta.url).href },
-  { title: 'Kathmandu Metro Idea & Innovation 2080', issuer: 'Kathmandu Metropolitan City', year: '2023', category: 'Awards', file: new URL('../certificates/KMII.png', import.meta.url).href },
-  { title: 'AI for Everyone', issuer: 'DeepLearning.AI · Coursera', year: '2022', category: 'AI & ML', file: new URL('../certificates/Coursera E7E2FW6QBVEE.png', import.meta.url).href },
-  { title: 'AI Fundamentals', issuer: 'DataCamp', year: '2024', category: 'AI & ML', file: new URL('../certificates/AIF0024951611331.png', import.meta.url).href },
-  { title: 'Data Literacy', issuer: 'DataCamp', year: '2024', category: 'Data', file: new URL('../certificates/DL0038780238200.png', import.meta.url).href },
-  { title: 'Artificial Intelligence Job Simulation', issuer: 'Cognizant · Forage', year: '2024', category: 'AI & ML', file: new URL('../certificates/AI+Job+Simulation.png', import.meta.url).href },
-  { title: 'AWS AI Practitioner Challenge', issuer: 'Udacity', year: '2026', category: 'Cloud', file: new URL('../certificates/AWS+AI+Practitioner+Challenge.png', import.meta.url).href },
-  { title: 'Introducing Generative AI with AWS', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/Intro-GenerativeAIwithAWS.png', import.meta.url).href },
-  { title: 'Artificial Intelligence Fundamentals', issuer: 'IBM SkillsBuild', year: '2024', category: 'AI & ML', file: new URL('../certificates/IBMDesign20261002-20-zj0at6.png', import.meta.url).href },
-  { title: 'Introduction to Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Intro to Machine Learning.png', import.meta.url).href },
-  { title: 'Intermediate Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Intermediate Machine Learning.png', import.meta.url).href },
-  { title: 'Introduction to Deep Learning', issuer: 'Kaggle', year: '2023', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Intro to Deep Learning.png', import.meta.url).href },
-  { title: 'Computer Vision', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/Rupak Neupane - Computer Vision.png', import.meta.url).href },
-  { title: 'Annual Nepal AI School', issuer: 'NAAMII', year: '2025', category: 'Research', file: new URL('../certificates/ANAIS.png', import.meta.url).href, orientation: 'portrait' },
+  { title: 'International Conference on Recent Trends in Artificial Intelligence', issuer: 'ICRTAI', year: '2025', category: 'Research', file: new URL('../certificates/optimized/ICRTAI.webp', import.meta.url).href },
+  { title: '1st Runner-up, AI/ML Hackathon', issuer: 'Global IME Bank', year: '2025', category: 'Awards', file: new URL('../certificates/optimized/certificate.webp', import.meta.url).href },
+  { title: 'Microdegree in Artificial Intelligence', issuer: 'Fusemachines', year: '2025', category: 'AI & ML', file: new URL('../certificates/optimized/Microdegree™+in+Artificial+Intelligence+2025-RUPAK+NEUPANE.webp', import.meta.url).href },
+  { title: 'Quantum Computing', issuer: 'IIT-Roorkee', year: '2025', category: 'Quantum', file: new URL('../certificates/optimized/neupanerupak7@gmail.com_certificate.webp', import.meta.url).href },
+  { title: 'Future AWS AI Scientist', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/optimized/Future AWS AI Scientist.webp', import.meta.url).href },
+  { title: 'Kathmandu Metro Idea & Innovation 2080', issuer: 'Kathmandu Metropolitan City', year: '2023', category: 'Awards', file: new URL('../certificates/optimized/KMII.webp', import.meta.url).href },
+  { title: 'AI for Everyone', issuer: 'DeepLearning.AI · Coursera', year: '2022', category: 'AI & ML', file: new URL('../certificates/optimized/Coursera E7E2FW6QBVEE.webp', import.meta.url).href },
+  { title: 'AI Fundamentals', issuer: 'DataCamp', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/AIF0024951611331.webp', import.meta.url).href },
+  { title: 'Data Literacy', issuer: 'DataCamp', year: '2024', category: 'Data', file: new URL('../certificates/optimized/DL0038780238200.webp', import.meta.url).href },
+  { title: 'Artificial Intelligence Job Simulation', issuer: 'Cognizant · Forage', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/AI+Job+Simulation.webp', import.meta.url).href },
+  { title: 'AWS AI Practitioner Challenge', issuer: 'Udacity', year: '2026', category: 'Cloud', file: new URL('../certificates/optimized/AWS+AI+Practitioner+Challenge.webp', import.meta.url).href },
+  { title: 'Introducing Generative AI with AWS', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/optimized/Intro-GenerativeAIwithAWS.webp', import.meta.url).href },
+  { title: 'Artificial Intelligence Fundamentals', issuer: 'IBM SkillsBuild', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/IBMDesign20261002-20-zj0at6.webp', import.meta.url).href },
+  { title: 'Introduction to Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intro to Machine Learning.webp', import.meta.url).href },
+  { title: 'Intermediate Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intermediate Machine Learning.webp', import.meta.url).href },
+  { title: 'Introduction to Deep Learning', issuer: 'Kaggle', year: '2023', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intro to Deep Learning.webp', import.meta.url).href },
+  { title: 'Computer Vision', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Computer Vision.webp', import.meta.url).href },
+  { title: 'Annual Nepal AI School', issuer: 'NAAMII', year: '2025', category: 'Research', file: new URL('../certificates/optimized/ANAIS.webp', import.meta.url).href, orientation: 'portrait' },
 ];
 
 const publications = [
@@ -91,75 +92,75 @@ const categories = ['All', 'AI & ML', 'Data', 'Cloud', 'Research', 'Awards'];
 const lifeMoments = [
   {
     title: 'Quiet evening in Pokhara',
-    src: new URL('../Photos/IMG_20221028_163325.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('IMG_20221028_163325'),
   },
   {
     title: 'Sunrise reflection through the mountains',
-    src: new URL('../Photos/IMG_20221030_070230.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('IMG_20221030_070230'),
   },
   {
     title: 'Peeking through the cave',
-    src: new URL('../Photos/IMG_20221124_160032.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('IMG_20221124_160032'),
   },
   {
     title: 'Travel notes',
-    src: new URL('../Photos/IMG_20231028_091912.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('IMG_20231028_091912'),
   },
   {
     title: 'A slow afternoon',
-    src: new URL('../Photos/IMG_20231031_115652.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('IMG_20231031_115652'),
   },
   {
     title: 'Morning in the mountains',
-    src: new URL('../Photos/IMG_20231104_084133.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('IMG_20231104_084133'),
   },
   {
     title: 'Finally On the top (Larke Pass)',
-    src: new URL('../Photos/IMG_20231104_084141.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('IMG_20231104_084141'),
   },
   {
     title: 'Peace and quiet',
-    src: new URL('../Photos/PXL_20241017_112822522.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20241017_112822522'),
   },
   {
     title: 'Himlung Basecamp',
-    src: new URL('../Photos/PXL_20241023_130822898.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20241023_130822898'),
   },
   {
     title: 'Morning haze',
-    src: new URL('../Photos/PXL_20241024_053113502.MP.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20241024_053113502.MP'),
   },
   {
     title: 'Temple meets mountains',
-    src: new URL('../Photos/PXL_20241025_131837615.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20241025_131837615'),
   },
   {
     title: 'Lake on the top',
-    src: new URL('../Photos/PXL_20241026_091728208.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20241026_091728208'),
   },
   {
     title: 'Steep downhill after the pass',
-    src: new URL('../Photos/PXL_20241026_101621110.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20241026_101621110'),
   },
   {
     title: 'Small wonders',
-    src: new URL('../Photos/PXL_20241026_101637834.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20241026_101637834'),
   },
   {
     title: 'Under the clouds',
-    src: new URL('../Photos/PXL_20250116_152329098.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20250116_152329098'),
   },
   {
     title: 'A quieter chapter',
-    src: new URL('../Photos/PXL_20250519_053848551.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20250519_053848551'),
   },
   {
     title: 'Late-summer light',
-    src: new URL('../Photos/PXL_20250810_074715562.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20250810_074715562'),
   },
   {
     title: 'Beyond the now',
-    src: new URL('../Photos/PXL_20260509_111643838.jpg', import.meta.url).href,
+    src: getOptimizedPhoto('PXL_20260509_111643838'),
   },
 ];
 
@@ -186,7 +187,12 @@ function CertificateCard({ certificate }) {
         rel="noreferrer"
         aria-label={`Open ${certificate.title} certificate`}
       >
-        <img src={certificate.file} alt={`${certificate.title} certificate`} loading="lazy" />
+        <img
+          src={certificate.file}
+          alt={`${certificate.title} certificate`}
+          loading="lazy"
+          decoding="async"
+        />
         <span className="preview-open"><ArrowUpRight size={16} aria-hidden="true" /></span>
       </a>
       <div className="certificate-meta">
@@ -291,7 +297,15 @@ function PortfolioPage() {
           <div className="hero-visual">
             <div className="profile-card">
               <a href={profileImage} target="_blank" rel="noreferrer" aria-label="Open portrait image">
-                <img src={profileImage} alt="Rupak Neupane portrait" />
+                <img
+                  src={profileImage}
+                  alt="Rupak Neupane portrait"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  width={720}
+                  height={900}
+                />
               </a>
             </div>
             <div className="mini-panel panel-top">
@@ -510,7 +524,14 @@ function PortfolioPage() {
             {lifeMoments.map((moment, index) => (
               <figure key={moment.title} className={`life-card life-card--${index % 3}`}>
                 <a href={moment.src} target="_blank" rel="noreferrer" aria-label={`Open ${moment.title} photo`}>
-                  <img src={moment.src} alt={moment.title} loading="lazy" />
+                  <img
+                    src={moment.src}
+                    alt={moment.title}
+                    loading="lazy"
+                    decoding="async"
+                    width={800}
+                    height={1000}
+                  />
                 </a>
                 <figcaption>{moment.title}</figcaption>
               </figure>
