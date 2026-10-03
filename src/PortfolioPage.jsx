@@ -66,7 +66,7 @@ const publications = [
 const projects = [
   {
     number: '01',
-    name: 'Sabdhamanthan',
+    name: 'Sabdhamanthan : Embedding Model for Nepali Language',
     field: 'NLP · Nepali language',
     description: 'A BERT-based contextual word embedding model for Nepali language understanding, designed for downstream language tasks and semantic representation.',
     href: 'https://github.com/srijangyawali04/Sabdhamanthan',
@@ -230,6 +230,7 @@ function PortfolioPage() {
 
         <nav className={menuOpen ? 'main-nav is-open' : 'main-nav'} aria-label="Main navigation">
           <a href="#research" onClick={closeMenu}>Research</a>
+          <a href="#publications" onClick={closeMenu}>Publications</a>
           <a href="#experience" onClick={closeMenu}>Experience</a>
           <a href="#projects" onClick={closeMenu}>Projects</a>
           <a href="#certificates" onClick={closeMenu}>Certificates</a>
@@ -264,7 +265,7 @@ function PortfolioPage() {
         <section className="hero content-width">
           <div className="hero-copy">
             <p className="eyebrow hero-eyebrow">
-              <span className="status-dot" /> AI engineer · researcher
+              <span className="status-dot" /> AI Developer · Researcher
             </p>
             <h1>
               Rupak
@@ -331,7 +332,7 @@ function PortfolioPage() {
             </div>
             <div className="stat-card">
               <strong>2025</strong>
-              <span>AI engineer at Global IME Bank</span>
+              <span>AI Developer at Global IME Bank</span>
             </div>
             <div className="stat-card">
               <strong>AI</strong>
@@ -389,7 +390,7 @@ function PortfolioPage() {
               </div>
               <div className="experience-content">
                 <p className="eyebrow">Oct 2025 — Jan 2026</p>
-                <h3>Artificial Intelligence Engineer</h3>
+                <h3>Artificial Intelligence Developer</h3>
                 <p className="company">Global IME Bank</p>
                 <p>
                   Developed multilingual Nepali/English invoice extraction using vision-language models and
