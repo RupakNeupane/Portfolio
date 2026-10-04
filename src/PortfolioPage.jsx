@@ -27,23 +27,28 @@ const profileImage = getOptimizedPhoto('RupakPhoto');
 
 const certificates = [
   { title: 'International Conference on Recent Trends in Artificial Intelligence', issuer: 'ICRTAI', year: '2025', category: 'Research', file: new URL('../certificates/optimized/ICRTAI.webp', import.meta.url).href },
+  { title: 'Poster Presenter, 16th IOE Graduate Conference', issuer: 'Institute of Engineering', year: '2025', category: 'Research', file: new URL('../certificates/optimized/1000004510.webp', import.meta.url).href },
   { title: '1st Runner-up, AI/ML Hackathon', issuer: 'Global IME Bank', year: '2025', category: 'Awards', file: new URL('../certificates/optimized/certificate.webp', import.meta.url).href },
   { title: 'Microdegree in Artificial Intelligence', issuer: 'Fusemachines', year: '2025', category: 'AI & ML', file: new URL('../certificates/optimized/Microdegree™+in+Artificial+Intelligence+2025-RUPAK+NEUPANE.webp', import.meta.url).href },
   { title: 'Quantum Computing', issuer: 'IIT-Roorkee', year: '2025', category: 'Quantum', file: new URL('../certificates/optimized/neupanerupak7@gmail.com_certificate.webp', import.meta.url).href },
   { title: 'Future AWS AI Scientist', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/optimized/Future AWS AI Scientist.webp', import.meta.url).href },
+  { title: 'Mastering Deep Learning with Python: Computer Vision, GAN and NLP (90 Hours)', issuer: 'Almonds AI · CEAB · Sciever', year: '2025', category: 'AI & ML', file: new URL('../certificates/optimized/1000004499.webp', import.meta.url).href },
+  { title: 'HackTheCircle Hackathon, Mentor', issuer: 'Khwopa College of Engineering', year: '2024', category: 'Awards', file: new URL('../certificates/optimized/1000004514.webp', import.meta.url).href },
+  { title: 'Best Technical Implementation, Software Competition', issuer: 'Khwopa College of Engineering', year: '2024', category: 'Awards', file: new URL('../certificates/optimized/1000004504.webp', import.meta.url).href },
   { title: 'Kathmandu Metro Idea & Innovation 2080', issuer: 'Kathmandu Metropolitan City', year: '2023', category: 'Awards', file: new URL('../certificates/optimized/KMII.webp', import.meta.url).href },
-  { title: 'AI for Everyone', issuer: 'DeepLearning.AI · Coursera', year: '2022', category: 'AI & ML', file: new URL('../certificates/optimized/Coursera E7E2FW6QBVEE.webp', import.meta.url).href },
   { title: 'AI Fundamentals', issuer: 'DataCamp', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/AIF0024951611331.webp', import.meta.url).href },
   { title: 'Data Literacy', issuer: 'DataCamp', year: '2024', category: 'Data', file: new URL('../certificates/optimized/DL0038780238200.webp', import.meta.url).href },
-  { title: 'Artificial Intelligence Job Simulation', issuer: 'Cognizant · Forage', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/AI+Job+Simulation.webp', import.meta.url).href },
+  { title: 'AI for Everyone', issuer: 'DeepLearning.AI · Coursera', year: '2022', category: 'AI & ML', file: new URL('../certificates/optimized/Coursera E7E2FW6QBVEE.webp', import.meta.url).href },
   { title: 'AWS AI Practitioner Challenge', issuer: 'Udacity', year: '2026', category: 'Cloud', file: new URL('../certificates/optimized/AWS+AI+Practitioner+Challenge.webp', import.meta.url).href },
   { title: 'Introducing Generative AI with AWS', issuer: 'Udacity', year: '2025', category: 'Cloud', file: new URL('../certificates/optimized/Intro-GenerativeAIwithAWS.webp', import.meta.url).href },
   { title: 'Artificial Intelligence Fundamentals', issuer: 'IBM SkillsBuild', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/IBMDesign20261002-20-zj0at6.webp', import.meta.url).href },
   { title: 'Introduction to Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intro to Machine Learning.webp', import.meta.url).href },
   { title: 'Intermediate Machine Learning', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intermediate Machine Learning.webp', import.meta.url).href },
-  { title: 'Annual Nepal AI School', issuer: 'NAAMII', year: '2025', category: 'Research', file: new URL('../certificates/optimized/ANAIS.webp', import.meta.url).href, orientation: 'portrait' },
+  { title: 'Artificial Intelligence Job Simulation', issuer: 'Cognizant · Forage', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/AI+Job+Simulation.webp', import.meta.url).href },
   { title: 'Introduction to Deep Learning', issuer: 'Kaggle', year: '2023', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Intro to Deep Learning.webp', import.meta.url).href },
   { title: 'Computer Vision', issuer: 'Kaggle', year: '2024', category: 'AI & ML', file: new URL('../certificates/optimized/Rupak Neupane - Computer Vision.webp', import.meta.url).href },
+  { title: 'Annual Nepal AI School', issuer: 'NAAMII', year: '2025', category: 'Research', file: new URL('../certificates/optimized/ANAIS.webp', import.meta.url).href, orientation: 'portrait' },
+  { title: 'Second Place, Futsal Competition', issuer: 'Khwopa College of Engineering', year: '2023', category: 'Awards', file: new URL('../certificates/optimized/1000004503.webp', import.meta.url).href },
 ];
 
 const publications = [
@@ -87,7 +92,7 @@ const projects = [
   },
 ];
 
-const categories = ['All', 'AI & ML', 'Data', 'Cloud', 'Research', 'Awards'];
+const categories = ['All', 'AI & ML', 'Data', 'Cloud', 'Quantum', 'Research', 'Awards'];
 
 const lifeMoments = [
   {
